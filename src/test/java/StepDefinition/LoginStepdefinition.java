@@ -38,6 +38,7 @@ public class LoginStepdefinition {
 	public void user_should_be_navigated_to_home_page() {
 	    String title=driver.findElement(By.xpath("//span[text()='Products']")).getText();
 	    Assert.assertEquals(title, "Products");
+		System.out.println("User navigated to home page");
 	}
 
 	@And("Close the browser.")
